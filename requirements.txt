@@ -1,0 +1,13 @@
+# Direct third-party dependencies inferred from source imports.
+# This is NOT a tested/pinned environment. Record actual working versions before publication.
+streamlit
+pandas
+numpy
+optuna
+shap
+seaborn
+matplotlib
+scipy
+scikit-learn>=1.2
+xgboost
+lightgbm
