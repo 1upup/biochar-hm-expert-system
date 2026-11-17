@@ -6,7 +6,6 @@ A Streamlit research application for predicting metal immobilization in soils an
 
 The application includes seven interface sections: system introduction, experimental data management, automated modeling, single-sample prediction, inverse design, batch prediction, and prediction history. The AutoML candidates are XGBoost, Random Forest, LightGBM, and SVR. Additional analyses include SHAP/PDP, study-wise sensitivity, weighted differential evolution optimization, and empirical support calibration.
 
-The original application source has been preserved byte-for-byte. Packaging does not change algorithms, page layouts, or colors.
 
 ## Setup and launch (Windows Command Prompt)
 
@@ -28,7 +27,7 @@ python --version
 python -m pip freeze > requirements-lock.txt
 ```
 
-Record the Python version in this README. Inspect the lock file for machine-specific paths before publishing it. Install the reviewed lock file for subsequent reproductions.
+Python version:3.7.3
 
 ## Data and workflow
 
@@ -39,7 +38,7 @@ Record the Python version in this README. Inspect the lock file for machine-spec
 
 **The built-in 600-record synthetic dataset is for functionality testing only. It is not the literature database and cannot reproduce manuscript findings.**
 
-This package does not include the real manuscript dataset or paper results. Add the authorized dataset, or specify its exact location in the Supplementary Information or repository. Do not claim that this package reproduces numerical manuscript results until that workflow has been verified.
+This package does not include the real manuscript dataset or paper results. Add the authorized dataset, or specify its exact location in the Supplementary Information or repository.
 
 The application creates `biochar_history.db` locally. Existing personal history files and Python environment folders do not need to be published. Uploading this repository does not deploy a live website.
 
@@ -53,10 +52,9 @@ For study-wise analyses provide traceable Study_ID values; do not invent source 
 
 Predictions and inverse-design outputs are research estimates, not validated remediation prescriptions. Empirical support scores describe support relative to the training data, not experiment success probabilities or proof of producibility.
 
-## Validation status of this package
+## Validation status
 
-Source identity and Python syntax compilation checked. Full Streamlit execution, dependency installation and model-result reproduction have NOT been tested in this packaging task.
+The application has been successfully run in the authors' local environment, and its main workflows have been checked. The tested Python and dependency versions are documented in this repository. Reproduction of the numerical results reported in the manuscript has not yet been verified.
 
 ## License and citation
 
-No license has been selected in this preparation package. The authors should agree on code reuse terms and add an appropriate LICENSE before describing the project as open source. Add the finalized article citation and a persistent code archive identifier when available.
